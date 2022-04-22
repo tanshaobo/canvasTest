@@ -46,11 +46,7 @@
       canvas.style.width = w
       canvas.style.height = h
     })
-    function random (min, max) {
-      if(arguments.length < 2){
-        max = min
-        min = 0
-      }
+    const random = (max, min = 0) => {
       if(min > max){
         const hold = max
         max = min
